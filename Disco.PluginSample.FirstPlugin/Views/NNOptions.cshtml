@@ -1,0 +1,68 @@
+﻿@model Disco.Services.Plugins.NN.ViewModels.NNOptionsViewModel
+@{
+       
+                        // NN Options
+                        // Last Updated 20/05/2013
+                        // Sean Benham
+    
+}
+
+
+
+<div id="warrantyJobFaultDescription" class="form" style="width: 650px; margin-top: 15px;">
+    <h2>Warranty Options</h2>
+    <table>
+
+        <tr>
+            <td>
+
+                <p>
+                    Please state the type of claim you wish to submit:
+                    <br />
+                    @Html.RadioButtonFor(m => m.NTPDevice, false) School Owned Device <br />
+                    @Html.RadioButtonFor(m => m.NTPDevice, true) Victorian NTP Staff Notebook  <br />
+                    @Html.ValidationMessageFor(m => m.NTPDevice)
+                </p>
+                <p>
+                    What is the primary suspected issue with the device:
+                    <br />
+                   
+                    
+
+                    @{
+                        
+                        // Drop Down box with values
+                        var issues = new Dictionary<int, string> 
+                              {
+                                    { 0, "Please Select"},
+                                    { 1, "Hard Drive"},
+                                    { 2, "CPU"},
+                                    { 3, "Charger"},
+                                    { 4, "RAM"},
+                                    { 5, "Motherboard"},
+                                    { 6, "Keyboard"},
+                                    { 7, "Palmrest"},
+                                    { 8, "DVD Drive"},
+                                    { 9, "Screen"},
+                                    { 10, "Physical Screen Damage"},
+                                    { 11, "Physical Base"},
+                                    { 12, "Physical Top Cover"},
+                                    { 13, "Physical Keyboard"},
+                                    { 14, "Physical Charger"},
+                                    { 15, "Battery"},
+                                    { 16, "Physical Battery"},
+                                    { 17, "Basecover"},
+                                    { 18, "Screen Hinges"},
+                                    { 19, "Fan"},
+                                    { 20, "Internal Power"}
+                            };
+                    }
+                    @Html.DropDownListFor(m => m.Issue, new SelectList(issues, "Key", "Value"))
+                    @Html.ValidationMessageFor(m => m.Issue)                
+
+                </p>
+
+            </td>
+        </tr>
+    </table>
+</div>
