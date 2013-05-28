@@ -1,11 +1,11 @@
-﻿using Disco.Services.Plugins.NN.ViewModels;
-using Disco.Services.Plugins;
+﻿using Disco.Services.Plugins;
+using NN.DiscoWarrantyPlugin.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Disco.Services.Plugins.NN
+namespace NN.DiscoWarrantyPlugin
 {
     // This class represents the plugin configuration handler within Disco. A plugin
     //  configuration class inherits from the 'PluginConfigurationHandler' abstract

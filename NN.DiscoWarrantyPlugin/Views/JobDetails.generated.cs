@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Disco.Services.Plugins.NN.Views
+namespace NN.DiscoWarrantyPlugin.Views
 {
     using System;
     using System.Collections.Generic;
@@ -72,8 +72,8 @@ WriteLiteral(" src=\"http://www.nn.net.au/images/website/NNLogo.png\"");
 
 WriteLiteral(" alt=\"NN\"");
 
-WriteLiteral(" /> \r\n                        </a>\r\n                    </div>\r\n                <" +
-"/td>\r\n            </tr>\r\n        </table>\r\n   \r\n</div>\r\n");
+WriteLiteral(" />\r\n                        </a>\r\n                    </div>\r\n                </" +
+"td>\r\n            </tr>\r\n        </table>\r\n   \r\n</div>\r\n");
 
         }
     }

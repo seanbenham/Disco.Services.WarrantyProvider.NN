@@ -7,7 +7,7 @@ using HtmlAgilityPack;
 using System.IO;
 using System.Web.Script.Serialization;
 
-namespace Disco.Services.Plugins.NN.ViewModels
+namespace NN.DiscoWarrantyPlugin.ViewModels
 {
     public class JobDetailsViewModel
     {

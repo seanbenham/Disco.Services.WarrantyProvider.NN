@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Disco.Services.Plugins.NN.Views
+namespace NN.DiscoWarrantyPlugin.Views
 {
     using System;
     using System.Collections.Generic;

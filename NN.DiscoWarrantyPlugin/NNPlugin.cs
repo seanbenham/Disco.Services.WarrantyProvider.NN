@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Disco.Services.Plugins.NN
+namespace NN.DiscoWarrantyPlugin
 {
     // This class represents the core plugin reference within Disco. A plugin core reference
     //  class inherits from the 'Plugin' abstract class found in 'Disco.Services.Plugins'.

@@ -9,7 +9,7 @@ using System.Web.Script.Serialization;
 using System.ComponentModel.DataAnnotations;
 
 
-namespace Disco.Services.Plugins.NN.ViewModels
+namespace NN.DiscoWarrantyPlugin.ViewModels
 {
     public class NNOptionsViewModel
     {
