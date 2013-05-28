@@ -11,7 +11,7 @@ using Disco.Models.BI.Config;
 using Disco.Models.Repository;
 using Disco.Services.Plugins.Features.WarrantyProvider;
 
-namespace NN.DiscoWarrantyPlugin
+namespace NN.DiscoWarrantyPlugin.Features
 {
     [PluginFeature(Id = "NNWarrantyProvider", Name = "Network Neighborhood", PrimaryFeature = true)]
     public class NNWarrantyProviderFeature : WarrantyProviderFeature
