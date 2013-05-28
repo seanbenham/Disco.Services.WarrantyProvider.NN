@@ -30,7 +30,7 @@ namespace NN.DiscoWarrantyPlugin.Views
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "1.5.4.0")]
     [System.Web.WebPages.PageVirtualPathAttribute("~/Views/NNOptions.cshtml")]
-    public partial class NNOptions : System.Web.Mvc.WebViewPage<Disco.Services.Plugins.NN.ViewModels.NNOptionsViewModel>
+    public partial class NNOptions : System.Web.Mvc.WebViewPage<NN.DiscoWarrantyPlugin.ViewModels.NNOptionsViewModel>
     {
         public NNOptions()
         {
@@ -40,16 +40,14 @@ namespace NN.DiscoWarrantyPlugin.Views
             
             #line 2 "..\..\Views\NNOptions.cshtml"
   
-       
-                        // NN Options
-                        // Last Updated 20/05/2013
-                        // Sean Benham
-    
+    // NN Options
+    // Last Updated 20/05/2013
+    // Sean Benham
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n\r\n\r\n<div");
+WriteLiteral("\r\n<div");
 
 WriteLiteral(" id=\"warrantyJobFaultDescription\"");
 
@@ -64,48 +62,46 @@ WriteLiteral(">\r\n    <h2>Warranty Options</h2>\r\n    <table>\r\n\r\n        <
 WriteLiteral("                    ");
 
             
-            #line 22 "..\..\Views\NNOptions.cshtml"
+            #line 17 "..\..\Views\NNOptions.cshtml"
                Write(Html.RadioButtonFor(m => m.NTPDevice, false));
 
             
             #line default
             #line hidden
-WriteLiteral(" School Owned Device <br />\r\n");
+WriteLiteral(" School Owned Device\r\n                    <br />\r\n");
 
 WriteLiteral("                    ");
 
             
-            #line 23 "..\..\Views\NNOptions.cshtml"
+            #line 19 "..\..\Views\NNOptions.cshtml"
                Write(Html.RadioButtonFor(m => m.NTPDevice, true));
 
             
             #line default
             #line hidden
-WriteLiteral(" Victorian NTP Staff Notebook  <br />\r\n");
+WriteLiteral(" Victorian NTP Staff Notebook \r\n                    <br />\r\n");
 
 WriteLiteral("                    ");
 
             
-            #line 24 "..\..\Views\NNOptions.cshtml"
+            #line 21 "..\..\Views\NNOptions.cshtml"
                Write(Html.ValidationMessageFor(m => m.NTPDevice));
 
             
             #line default
             #line hidden
 WriteLiteral("\r\n                </p>\r\n                <p>\r\n                    What is the prim" +
-"ary suspected issue with the device:\r\n                    <br />\r\n              " +
-"     \r\n                    \r\n\r\n");
+"ary suspected issue with the device:<br />\r\n");
 
             
-            #line 32 "..\..\Views\NNOptions.cshtml"
+            #line 25 "..\..\Views\NNOptions.cshtml"
                     
             
             #line default
             #line hidden
             
-            #line 32 "..\..\Views\NNOptions.cshtml"
+            #line 25 "..\..\Views\NNOptions.cshtml"
                       
-                        
                         // Drop Down box with values
                         var issues = new Dictionary<int, string> 
                               {
@@ -140,7 +136,7 @@ WriteLiteral("\r\n");
 WriteLiteral("                    ");
 
             
-            #line 60 "..\..\Views\NNOptions.cshtml"
+            #line 52 "..\..\Views\NNOptions.cshtml"
                Write(Html.DropDownListFor(m => m.Issue, new SelectList(issues, "Key", "Value")));
 
             
@@ -151,14 +147,13 @@ WriteLiteral("\r\n");
 WriteLiteral("                    ");
 
             
-            #line 61 "..\..\Views\NNOptions.cshtml"
+            #line 53 "..\..\Views\NNOptions.cshtml"
                Write(Html.ValidationMessageFor(m => m.Issue));
 
             
             #line default
             #line hidden
-WriteLiteral("                \r\n\r\n                </p>\r\n\r\n            </td>\r\n        </tr>\r\n   " +
-" </table>\r\n</div>\r\n");
+WriteLiteral("\r\n                </p>\r\n            </td>\r\n        </tr>\r\n    </table>\r\n</div>\r\n");
 
         }
     }

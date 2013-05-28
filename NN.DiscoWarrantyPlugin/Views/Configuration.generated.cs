@@ -30,21 +30,21 @@ namespace NN.DiscoWarrantyPlugin.Views
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "1.5.4.0")]
     [System.Web.WebPages.PageVirtualPathAttribute("~/Views/Configuration.cshtml")]
-    public partial class Configuration : System.Web.Mvc.WebViewPage<Disco.Services.Plugins.NN.ViewModels.ConfigurationModel>
+    public partial class Configuration : System.Web.Mvc.WebViewPage<NN.DiscoWarrantyPlugin.ViewModels.ConfigurationModel>
     {
         public Configuration()
         {
         }
         public override void Execute()
         {
-WriteLiteral("\r\n<h2>Network Neighbourhood Warranty Plugin</h2>\r\n<img");
+WriteLiteral("<h2>Network Neighbourhood Warranty Plugin</h2>\r\n<img");
 
 WriteLiteral(" src=\"http://www.nn.net.au/images/website/NNLogo.png\"");
 
 WriteLiteral(" alt=\"NN\"");
 
 WriteLiteral(" /> \r\n<h3>This plugin doesn\'t require any configuration. Contact details are supp" +
-"lied by Active Directory.</h3>\r\n\r\n");
+"lied by Active Directory.</h3>");
 
         }
     }

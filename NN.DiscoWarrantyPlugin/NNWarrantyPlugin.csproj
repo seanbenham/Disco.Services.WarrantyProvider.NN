@@ -43,15 +43,15 @@
   <ItemGroup>
     <Reference Include="Disco.Data">
       <HintPath>..\Resources\Disco References\Disco.Data.dll</HintPath>
-      <Private>False</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Disco.Models">
       <HintPath>..\Resources\Disco References\Disco.Models.dll</HintPath>
-      <Private>False</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Disco.Services">
       <HintPath>..\Resources\Disco References\Disco.Services.dll</HintPath>
-      <Private>False</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
@@ -116,12 +116,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Features\NNWarrantyProviderFeature.cs" />
-    <Compile Include="NNPlugin.cs" />
-    <Compile Include="NNPluginConfiguration.cs" />
+    <Compile Include="NNWarrantyPlugin.cs" />
+    <Compile Include="NNWarrantyPluginConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\ConfigurationModel.cs" />
     <Compile Include="ViewModels\NNOptionsViewModel.cs" />
-    <Compile Include="ViewModels\JobDetailsViewModel.cs" />
     <Compile Include="Views\Configuration.generated.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

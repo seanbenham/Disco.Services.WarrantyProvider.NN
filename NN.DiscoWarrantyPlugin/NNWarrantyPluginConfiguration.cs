@@ -1,4 +1,5 @@
-﻿using Disco.Services.Plugins;
+﻿using Disco.Data.Repository;
+using Disco.Services.Plugins;
 using NN.DiscoWarrantyPlugin.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -14,14 +15,14 @@ namespace NN.DiscoWarrantyPlugin
     //  can be named anything, but following the convention of '{PluginId}Configuration'
     //  is recommended.
 
-    public class NNPluginConfiguration : PluginConfigurationHandler
+    public class NNWarrantyPluginConfiguration : PluginConfigurationHandler
     {
         /// <summary>
         /// This method is called by the Disco plugin host whenever the
         /// configuration page is requested. A response is required including
         /// a configuration 'model' and the type of a compiled Razor view.
         /// </summary>
-        public override PluginConfigurationHandler.PluginConfigurationHandlerGetResponse Get(Data.Repository.DiscoDataContext dbContext, System.Web.Mvc.Controller controller)
+        public override PluginConfigurationHandler.PluginConfigurationHandlerGetResponse Get(DiscoDataContext dbContext, System.Web.Mvc.Controller controller)
         {
             // Get View type
             Type view = typeof(Views.Configuration);
@@ -42,10 +43,8 @@ namespace NN.DiscoWarrantyPlugin
         /// You may validate the returned configuration, save it and then
         /// return a boolean to indicate success or failure.
         /// </summary>
-        public override bool Post(Data.Repository.DiscoDataContext dbContext, System.Web.Mvc.FormCollection form, System.Web.Mvc.Controller controller)
+        public override bool Post(DiscoDataContext dbContext, System.Web.Mvc.FormCollection form, System.Web.Mvc.Controller controller)
         {
-          
-
             return true;
         }
     }

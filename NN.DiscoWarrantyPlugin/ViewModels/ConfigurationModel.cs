@@ -7,6 +7,5 @@ namespace NN.DiscoWarrantyPlugin.ViewModels
 {
     public class ConfigurationModel
     {
-   
     }
 }

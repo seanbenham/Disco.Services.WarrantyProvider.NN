@@ -1,14 +1,9 @@
-﻿@model Disco.Services.Plugins.NN.ViewModels.NNOptionsViewModel
+﻿@model NN.DiscoWarrantyPlugin.ViewModels.NNOptionsViewModel
 @{
-       
-                        // NN Options
-                        // Last Updated 20/05/2013
-                        // Sean Benham
-    
+    // NN Options
+    // Last Updated 20/05/2013
+    // Sean Benham
 }
-
-
-
 <div id="warrantyJobFaultDescription" class="form" style="width: 650px; margin-top: 15px;">
     <h2>Warranty Options</h2>
     <table>
@@ -19,18 +14,15 @@
                 <p>
                     Please state the type of claim you wish to submit:
                     <br />
-                    @Html.RadioButtonFor(m => m.NTPDevice, false) School Owned Device <br />
-                    @Html.RadioButtonFor(m => m.NTPDevice, true) Victorian NTP Staff Notebook  <br />
+                    @Html.RadioButtonFor(m => m.NTPDevice, false) School Owned Device
+                    <br />
+                    @Html.RadioButtonFor(m => m.NTPDevice, true) Victorian NTP Staff Notebook 
+                    <br />
                     @Html.ValidationMessageFor(m => m.NTPDevice)
                 </p>
                 <p>
-                    What is the primary suspected issue with the device:
-                    <br />
-                   
-                    
-
+                    What is the primary suspected issue with the device:<br />
                     @{
-                        
                         // Drop Down box with values
                         var issues = new Dictionary<int, string> 
                               {
@@ -58,10 +50,8 @@
                             };
                     }
                     @Html.DropDownListFor(m => m.Issue, new SelectList(issues, "Key", "Value"))
-                    @Html.ValidationMessageFor(m => m.Issue)                
-
+                    @Html.ValidationMessageFor(m => m.Issue)
                 </p>
-
             </td>
         </tr>
     </table>

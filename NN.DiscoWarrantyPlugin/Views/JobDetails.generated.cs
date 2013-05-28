@@ -30,7 +30,7 @@ namespace NN.DiscoWarrantyPlugin.Views
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "1.5.4.0")]
     [System.Web.WebPages.PageVirtualPathAttribute("~/Views/JobDetails.cshtml")]
-    public partial class JobDetails : System.Web.Mvc.WebViewPage<Disco.Services.Plugins.NN.ViewModels.JobDetailsViewModel>
+    public partial class JobDetails : System.Web.Mvc.WebViewPage<dynamic>
     {
         public JobDetails()
         {
@@ -41,39 +41,39 @@ WriteLiteral("<div");
 
 WriteLiteral(" id=\"NNWarrantyProviderJobDetails\"");
 
-WriteLiteral(">\r\n   \r\n    \r\n    \r\n        <table>\r\n            <tr>\r\n                <td");
+WriteLiteral(">\r\n    <table>\r\n        <tr>\r\n            <td");
 
 WriteLiteral(" style=\"text-align: center; vertical-align: middle;\"");
 
-WriteLiteral(">\r\n                    <span");
+WriteLiteral(">\r\n                <span");
 
 WriteLiteral(" class=\"smallMessage\"");
 
-WriteLiteral(">Warranty has been logged with Network Neighborhood.</span>\r\n                </td" +
-">\r\n                <td");
+WriteLiteral(">Warranty has been logged with Network Neighborhood.</span>\r\n            </td>\r\n " +
+"           <td");
 
 WriteLiteral(" rowspan=\"3\"");
 
 WriteLiteral(" style=\"width: 300px;\"");
 
-WriteLiteral(">\r\n                    <div");
+WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" style=\"text-align: center; padding-top: 10px;\"");
 
-WriteLiteral(">\r\n                        <a");
+WriteLiteral(">\r\n                    <a");
 
 WriteLiteral(" href=\"http://www.nn.net.au\"");
 
 WriteLiteral(" target=\"_blank\"");
 
-WriteLiteral(">\r\n                          <img");
+WriteLiteral(">\r\n                        <img");
 
 WriteLiteral(" src=\"http://www.nn.net.au/images/website/NNLogo.png\"");
 
 WriteLiteral(" alt=\"NN\"");
 
-WriteLiteral(" />\r\n                        </a>\r\n                    </div>\r\n                </" +
-"td>\r\n            </tr>\r\n        </table>\r\n   \r\n</div>\r\n");
+WriteLiteral(" />\r\n                    </a>\r\n                </div>\r\n            </td>\r\n       " +
+" </tr>\r\n    </table>\r\n</div>");
 
         }
     }

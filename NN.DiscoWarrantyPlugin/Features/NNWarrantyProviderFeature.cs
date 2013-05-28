@@ -1,15 +1,15 @@
-﻿using System;
+﻿using Disco.Data.Repository;
+using Disco.Models.BI.Config;
+using Disco.Models.Repository;
+using Disco.Services.Plugins;
+using Disco.Services.Plugins.Features.WarrantyProvider;
+using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
-using Disco.Data.Repository;
-using Disco.Models.BI.Config;
-using Disco.Models.Repository;
-using Disco.Services.Plugins.Features.WarrantyProvider;
 
 namespace NN.DiscoWarrantyPlugin.Features
 {
@@ -17,8 +17,6 @@ namespace NN.DiscoWarrantyPlugin.Features
     public class NNWarrantyProviderFeature : WarrantyProviderFeature
     {
         public override string WarrantyProviderId { get { return "NN"; } }
-
-
 
         #region Submit Job
         public override Type SubmitJobViewType
@@ -218,9 +216,7 @@ namespace NN.DiscoWarrantyPlugin.Features
         }
         public override dynamic JobDetailsViewModel(DiscoDataContext dbContext, Controller controller, Job Job)
         {
-            int nnOnlineWarrantyId;
-
-            return ViewModels.JobDetailsViewModel.EmptyJobDetails();
+            return null;
         }
         #endregion
     }
