@@ -37,14 +37,53 @@ namespace NN.DiscoWarrantyPlugin.Views
         }
         public override void Execute()
         {
-WriteLiteral("<h2>Network Neighbourhood Warranty Plugin</h2>\r\n<img");
+WriteLiteral("<div");
 
-WriteLiteral(" src=\"http://www.nn.net.au/images/website/NNLogo.png\"");
+WriteLiteral(" class=\"clearfix\"");
+
+WriteLiteral(" style=\"width: 600px; margin: 0 auto;\"");
+
+WriteLiteral(">\r\n    <img");
+
+WriteAttribute("src", Tuple.Create(" src=\"", 131), Tuple.Create("\"", 179)
+            
+            #line 3 "..\..\Views\Configuration.cshtml"
+, Tuple.Create(Tuple.Create("", 137), Tuple.Create<System.Object, System.Int32>(this.DiscoPluginResourceUrl("NNLogo.png")
+            
+            #line default
+            #line hidden
+, 137), false)
+);
 
 WriteLiteral(" alt=\"NN\"");
 
-WriteLiteral(" /> \r\n<h3>This plugin doesn\'t require any configuration. Contact details are supp" +
-"lied by Active Directory.</h3>");
+WriteLiteral(" style=\"float: left; width: 192px; height: 202px;\"");
+
+WriteLiteral(" />\r\n    <h3");
+
+WriteLiteral(" style=\"float: left; margin-top: 80px; margin-left: 20px;\"");
+
+WriteLiteral(@">This plugin doesn't require any configuration.</h3>
+</div>
+<script>
+    $(function () {
+        var $actionBar = $('.actionBar');
+
+        // Remove the 'Save Configuration' button
+        $actionBar.find('input[type=""submit""][value=""Save Configuration""]').remove();
+
+        // Add 'Return to Plugins' button
+        var pluginsUrl = '");
+
+            
+            #line 14 "..\..\Views\Configuration.cshtml"
+                      Write(Url.Content("~/Config/Plugins"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\';\r\n        var $buttonPlugins = $(\'<a>\').attr(\'href\', pluginsUrl).addClass(\'butt" +
+"on\').text(\'Return to Plugins\').prependTo($actionBar);\r\n    });\r\n</script>");
 
         }
     }

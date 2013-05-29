@@ -1,4 +1,17 @@
 ﻿@model NN.DiscoWarrantyPlugin.ViewModels.ConfigurationModel
-<h2>Network Neighbourhood Warranty Plugin</h2>
-<img src="http://www.nn.net.au/images/website/NNLogo.png" alt="NN" /> 
-<h3>This plugin doesn't require any configuration. Contact details are supplied by Active Directory.</h3>
+<div class="clearfix" style="width: 600px; margin: 0 auto;">
+    <img src="@this.DiscoPluginResourceUrl("NNLogo.png")" alt="NN" style="float: left; width: 192px; height: 202px;" />
+    <h3 style="float: left; margin-top: 80px; margin-left: 20px;">This plugin doesn't require any configuration.</h3>
+</div>
+<script>
+    $(function () {
+        var $actionBar = $('.actionBar');
+
+        // Remove the 'Save Configuration' button
+        $actionBar.find('input[type="submit"][value="Save Configuration"]').remove();
+
+        // Add 'Return to Plugins' button
+        var pluginsUrl = '@(Url.Content("~/Config/Plugins"))';
+        var $buttonPlugins = $('<a>').attr('href', pluginsUrl).addClass('button').text('Return to Plugins').prependTo($actionBar);
+    });
+</script>

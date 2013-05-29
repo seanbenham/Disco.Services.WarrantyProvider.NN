@@ -49,42 +49,42 @@ namespace NN.DiscoWarrantyPlugin.Views
             #line hidden
 WriteLiteral("\r\n<div");
 
-WriteLiteral(" id=\"warrantyJobFaultDescription\"");
+WriteLiteral(" id=\"warrantyJobNNOptions\"");
 
 WriteLiteral(" class=\"form\"");
 
 WriteLiteral(" style=\"width: 650px; margin-top: 15px;\"");
 
-WriteLiteral(">\r\n    <h2>Warranty Options</h2>\r\n    <table>\r\n\r\n        <tr>\r\n            <td>\r\n" +
-"\r\n                <p>\r\n                    Please state the type of claim you wi" +
-"sh to submit:\r\n                    <br />\r\n");
+WriteLiteral(">\r\n    <h2>Network Neighborhood Options</h2>\r\n    <table>\r\n        <tr>\r\n        " +
+"    <td>\r\n                <p>\r\n                    Please state the type of clai" +
+"m you wish to submit:\r\n                    <br />\r\n                    \r\n");
 
 WriteLiteral("                    ");
 
             
-            #line 17 "..\..\Views\NNOptions.cshtml"
+            #line 16 "..\..\Views\NNOptions.cshtml"
                Write(Html.RadioButtonFor(m => m.NTPDevice, false));
 
             
             #line default
             #line hidden
-WriteLiteral(" School Owned Device\r\n                    <br />\r\n");
+WriteLiteral("<label> School Owned Device</label>\r\n                    <br />\r\n");
 
 WriteLiteral("                    ");
 
             
-            #line 19 "..\..\Views\NNOptions.cshtml"
+            #line 18 "..\..\Views\NNOptions.cshtml"
                Write(Html.RadioButtonFor(m => m.NTPDevice, true));
 
             
             #line default
             #line hidden
-WriteLiteral(" Victorian NTP Staff Notebook \r\n                    <br />\r\n");
+WriteLiteral("<label>  Victorian NTP Staff Notebook</label>\r\n                    <br />\r\n");
 
 WriteLiteral("                    ");
 
             
-            #line 21 "..\..\Views\NNOptions.cshtml"
+            #line 20 "..\..\Views\NNOptions.cshtml"
                Write(Html.ValidationMessageFor(m => m.NTPDevice));
 
             
@@ -93,51 +93,11 @@ WriteLiteral("                    ");
 WriteLiteral("\r\n                </p>\r\n                <p>\r\n                    What is the prim" +
 "ary suspected issue with the device:<br />\r\n");
 
-            
-            #line 25 "..\..\Views\NNOptions.cshtml"
-                    
-            
-            #line default
-            #line hidden
-            
-            #line 25 "..\..\Views\NNOptions.cshtml"
-                      
-                        // Drop Down box with values
-                        var issues = new Dictionary<int, string> 
-                              {
-                                    { 0, "Please Select"},
-                                    { 1, "Hard Drive"},
-                                    { 2, "CPU"},
-                                    { 3, "Charger"},
-                                    { 4, "RAM"},
-                                    { 5, "Motherboard"},
-                                    { 6, "Keyboard"},
-                                    { 7, "Palmrest"},
-                                    { 8, "DVD Drive"},
-                                    { 9, "Screen"},
-                                    { 10, "Physical Screen Damage"},
-                                    { 11, "Physical Base"},
-                                    { 12, "Physical Top Cover"},
-                                    { 13, "Physical Keyboard"},
-                                    { 14, "Physical Charger"},
-                                    { 15, "Battery"},
-                                    { 16, "Physical Battery"},
-                                    { 17, "Basecover"},
-                                    { 18, "Screen Hinges"},
-                                    { 19, "Fan"},
-                                    { 20, "Internal Power"}
-                            };
-                    
-            
-            #line default
-            #line hidden
-WriteLiteral("\r\n");
-
 WriteLiteral("                    ");
 
             
-            #line 52 "..\..\Views\NNOptions.cshtml"
-               Write(Html.DropDownListFor(m => m.Issue, new SelectList(issues, "Key", "Value")));
+            #line 24 "..\..\Views\NNOptions.cshtml"
+               Write(Html.DropDownListFor(m => m.Issue, new SelectList(NN.DiscoWarrantyPlugin.Features.NNWarrantyProviderFeature.NNSuspectedIssues, "Key", "Value")));
 
             
             #line default
@@ -147,7 +107,7 @@ WriteLiteral("\r\n");
 WriteLiteral("                    ");
 
             
-            #line 53 "..\..\Views\NNOptions.cshtml"
+            #line 25 "..\..\Views\NNOptions.cshtml"
                Write(Html.ValidationMessageFor(m => m.Issue));
 
             

@@ -68,9 +68,19 @@ WriteLiteral(" target=\"_blank\"");
 
 WriteLiteral(">\r\n                        <img");
 
-WriteLiteral(" src=\"http://www.nn.net.au/images/website/NNLogo.png\"");
+WriteAttribute("src", Tuple.Create(" src=\"", 479), Tuple.Create("\"", 527)
+            
+            #line 10 "..\..\Views\JobDetails.cshtml"
+, Tuple.Create(Tuple.Create("", 485), Tuple.Create<System.Object, System.Int32>(this.DiscoPluginResourceUrl("NNLogo.png")
+            
+            #line default
+            #line hidden
+, 485), false)
+);
 
-WriteLiteral(" alt=\"NN\"");
+WriteLiteral(" alt=\"Network Neighborhood Logo\"");
+
+WriteLiteral(" style=\"width: 192px; height: 202px;\"");
 
 WriteLiteral(" />\r\n                    </a>\r\n                </div>\r\n            </td>\r\n       " +
 " </tr>\r\n    </table>\r\n</div>");
