@@ -45,7 +45,8 @@ namespace NN.DiscoWarrantyPlugin
         /// </summary>
         public override bool Post(DiscoDataContext dbContext, System.Web.Mvc.FormCollection form, System.Web.Mvc.Controller controller)
         {
-            return true;
+            // No configuration is expected
+            throw new NotImplementedException();
         }
     }
 }

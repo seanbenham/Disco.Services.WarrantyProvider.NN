@@ -8,7 +8,7 @@ using System.Web;
 
 namespace NN.DiscoWarrantyPlugin
 {
-    [Plugin(Id = "NNWarrantyPlugin", Name = "Network Neighborhood-  Warranty Plugin", Author = "Sean Benham",
+    [Plugin(Id = "NNWarrantyPlugin", Name = "Network Neighborhood", Author = "Sean Benham",
          Url = "http://nn.net.au/", HostVersionMin = "1.2.0521.1121")]
     public class NNWarrantyPlugin : Plugin
     {
