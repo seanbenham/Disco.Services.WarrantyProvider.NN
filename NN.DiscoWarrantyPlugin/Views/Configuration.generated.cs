@@ -64,6 +64,8 @@ WriteLiteral(" />\r\n    <h3");
 WriteLiteral(" style=\"float: left; margin-top: 80px; margin-left: 20px;\"");
 
 WriteLiteral(@">This plugin doesn't require any configuration.</h3>
+    <h4>Disclaimer</h4>
+    <p>Network Neighborhood does not provide technical support for the plugin and NN will not be liable for loss or damages in relation to the use of this plugin. <br /> This plugin was developed by Sean Benham and if requested by Network Neighborhood the plugin could be disabled at anytime.</p>
 </div>
 <script>
     $(function () {
@@ -76,7 +78,7 @@ WriteLiteral(@">This plugin doesn't require any configuration.</h3>
         var pluginsUrl = '");
 
             
-            #line 14 "..\..\Views\Configuration.cshtml"
+            #line 16 "..\..\Views\Configuration.cshtml"
                       Write(Url.Content("~/Config/Plugins"));
 
             
