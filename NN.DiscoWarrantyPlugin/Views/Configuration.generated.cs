@@ -28,7 +28,7 @@ namespace NN.DiscoWarrantyPlugin.Views
     using System.Web.WebPages;
     using Disco.Services.Plugins;
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "1.5.4.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "2.0.0.0")]
     [System.Web.WebPages.PageVirtualPathAttribute("~/Views/Configuration.cshtml")]
     public partial class Configuration : System.Web.Mvc.WebViewPage<NN.DiscoWarrantyPlugin.ViewModels.ConfigurationModel>
     {
@@ -41,31 +41,51 @@ WriteLiteral("<div");
 
 WriteLiteral(" class=\"clearfix\"");
 
-WriteLiteral(" style=\"width: 600px; margin: 0 auto;\"");
+WriteLiteral(" style=\"width: 600px; margin: 20px auto;\"");
 
 WriteLiteral(">\r\n    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 131), Tuple.Create("\"", 179)
+WriteAttribute("src", Tuple.Create(" src=\"", 134), Tuple.Create("\"", 182)
             
             #line 3 "..\..\Views\Configuration.cshtml"
-, Tuple.Create(Tuple.Create("", 137), Tuple.Create<System.Object, System.Int32>(this.DiscoPluginResourceUrl("NNLogo.png")
+, Tuple.Create(Tuple.Create("", 140), Tuple.Create<System.Object, System.Int32>(this.DiscoPluginResourceUrl("NNLogo.png")
             
             #line default
             #line hidden
-, 137), false)
+, 140), false)
 );
 
 WriteLiteral(" alt=\"NN\"");
 
 WriteLiteral(" style=\"float: left; width: 192px; height: 202px;\"");
 
-WriteLiteral(" />\r\n    <h3");
+WriteLiteral(" />\r\n    <div");
 
 WriteLiteral(" style=\"float: left; margin-top: 80px; margin-left: 20px;\"");
 
-WriteLiteral(@">This plugin doesn't require any configuration.</h3>
-    <h4>Disclaimer</h4>
-    <p>Network Neighborhood does not provide technical support for the plugin and NN will not be liable for loss or damages in relation to the use of this plugin. <br /> This plugin was developed by Sean Benham and if requested by Network Neighborhood the plugin could be disabled at anytime.</p>
+WriteLiteral(">\r\n        <h3>This plugin doesn\'t require any configuration.</h3>\r\n    </div>\r\n<" +
+"/div>\r\n<div");
+
+WriteLiteral(" class=\"code\"");
+
+WriteLiteral(" style=\"width: 760px; margin: 0 auto; font-size: 0.9em;\"");
+
+WriteLiteral(@">
+    <h4>DISCLAIMER</h4>
+    The software is provided ""as is"", without warranty of any kind, express or implied, including but not
+        limited to the warranties of merchantability, fitness for a particular purpose and noninfringement.
+        In no event shall Network Neighborhood, the authors or copyright holders be liable for any claim,
+        damages or other liability, whether in an action of contract, tort or otherwise, arising from,
+        out of or in connection with the software or the use or other dealings in the software.
+        <br />
+    <br />
+    This plugin was developed by <a");
+
+WriteLiteral(" href=\"http://discoict.com.au/member/1257.aspx\"");
+
+WriteLiteral(" target=\"_blank\"");
+
+WriteLiteral(@">Sean Benham</a>. If requested by Network Neighborhood, this plugin could be disabled at anytime.
 </div>
 <script>
     $(function () {
@@ -78,14 +98,14 @@ WriteLiteral(@">This plugin doesn't require any configuration.</h3>
         var pluginsUrl = '");
 
             
-            #line 16 "..\..\Views\Configuration.cshtml"
+            #line 27 "..\..\Views\Configuration.cshtml"
                       Write(Url.Content("~/Config/Plugins"));
 
             
             #line default
             #line hidden
 WriteLiteral("\';\r\n        var $buttonPlugins = $(\'<a>\').attr(\'href\', pluginsUrl).addClass(\'butt" +
-"on\').text(\'Return to Plugins\').prependTo($actionBar);\r\n    });\r\n</script>");
+"on\').text(\'Return to Plugins\').prependTo($actionBar);\r\n    });\r\n</script>\r\n");
 
         }
     }
