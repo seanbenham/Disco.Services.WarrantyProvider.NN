@@ -210,7 +210,7 @@ namespace NN.DiscoWarrantyPlugin.Features
             string stringResponse = null;
             try
             {
-                HttpWebRequest wreq = HttpWebRequest.Create("http://portal.nn.net.au/ajax/warranty/ajaxWarrantyCreateJob.php") as HttpWebRequest;
+                HttpWebRequest wreq = HttpWebRequest.Create("https://portal.nn.net.au/ajax/warranty/ajaxWarrantyCreateJob.php") as HttpWebRequest;
                 wreq.KeepAlive = false;
                 wreq.Method = WebRequestMethods.Http.Post;
                 wreq.ContentType = "application/x-www-form-urlencoded";
